@@ -30,7 +30,7 @@ In the step 3, the client sends requests to the server `S`. The ticket Ticket<su
 The server `S` needs to verify Ticket<sub>CS</sub> to make sure that the request is authenticated before the server `S` performs the request from `C`.
 The server `S` may need to ask the authentication server `A` to verify the ticket or it verifies the ticket itself, before the server `S` performs the request from `C`.
 
-When [JSON Web Tokens - JWT](https://jwt.io) is used, Ticket<sub>CS</sub> can be verified the knowledge of the key `K` if it is symmetric encryption or the private key of `K` if iti is asymmetric encryption.
+When [JSON Web Tokens - JWT](https://jwt.io) is used, Ticket<sub>CS</sub> can be verified by using the knowledge of the key `K` if symmetric encryption is used, or by using the knowedge of the private key for the public key `K` if asymmetric encryption is used.
 
 ### Step 4: S &rarr; C: result
 
