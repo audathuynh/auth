@@ -36,6 +36,6 @@ When [JSON Web Tokens - JWT](https://jwt.io) is used, Ticket<sub>CS</sub> can be
 
 In the step 4, the server `S` returns the result to the client `C`.
 
-## The problem of the authentication process
+## The problems of the authentication process
 
 TODO:
