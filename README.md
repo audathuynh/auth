@@ -3,7 +3,7 @@ Authentication and Authorisation for micro-services
 
 ## Authentication
 
-This is the procedure for the authentication that I see people are using in practice.
+This is the procedure of authentication for micro-services that I see people are using in practice.
 
 ### Step 1: C &rarr; A: C<sub>id</sub>, K<sub>c</sub>
 
