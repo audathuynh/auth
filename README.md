@@ -17,7 +17,7 @@ The C<sub>id</sub> can be the username or user id of the user `C`.
 
 K<sub>c</sub> can be the password that the user inputted.
 
-In the step 2, the authentication server verifies the information of the user id C<sub>id</sub> and the key K<sub>c</sub> in the system. If the information is correct, a ticket Ticket<sub>CS</sub> will be returned to the client.
+In the step 2, the authentication server verifies the information of the user id <mark>C<sub>id</sub></mark> and the key K<sub>c</sub> in the system. If the information is correct, a ticket Ticket<sub>CS</sub> will be returned to the client.
 
 Client will use the ticket Ticket<sub>CS</sub> in the next requests to access resources on the server `S`.
 
