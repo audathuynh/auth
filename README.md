@@ -20,12 +20,12 @@ In the step 2, the authentication server verifies the information of the user id
 Client will use the ticket Ticket<sub>CS</sub> in the next requests to access resources on the server `S`.
 
 Recently, people prefer to use [JSON Web Tokens - JWT](https://jwt.io) to implement the ticket Ticket<sub>CS</sub>.
-In the approach, the ticket Ticket<sub>CS</sub> can be formulated as a triple of `header`, `payload`, and `{header,payload}<sub>K</sub>`, where `{header,payload}<sub>K</sub>` denotes that the information of `header` and `payload` is encrypted by a secret key `K`.
-`{header,payload}<sub>K</sub>` can be seen as a signature signed by the authentication server `A` and only the server `A` can verify if the `Ticket<sub>CS</sub>` is valid or not.
+In the approach, the ticket Ticket<sub>CS</sub> can be formulated as a triple of `header`, `payload`, and {header,payload}<sub>K</sub>, where {header,payload}<sub>K</sub> denotes that the information of `header` and `payload` is encrypted by a secret key `K`.
+{header,payload}<sub>K</sub> can be seen as a signature signed by the authentication server `A` and only the server `A` can verify if the Ticket<sub>CS</sub> is valid or not.
 
 Step 3: C -> S: request, Ticket<sub>CS</sub>
 
-In this step, the client sends requests to the server `S`. The ticket `Ticket<sub>CS</sub>` is attached in each request to the server `S`. The server `S` will ask the server `A` to verify the ticket or it verifies the ticket itself, before the server `S` performs the request from `C`.
+In this step, the client sends requests to the server `S`. The ticket Ticket<sub>CS</sub> is attached in each request to the server `S`. The server `S` will ask the server `A` to verify the ticket or it verifies the ticket itself, before the server `S` performs the request from `C`.
 
 Step 4: S -> C: result.
 
