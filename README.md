@@ -62,3 +62,11 @@ How do I verify that the result is really from `S`, not from someone else for my
 ## A proposed solution for authentication
 
 This will be added later.
+
+## Authorisation
+
+This will be added later.
+
+## A proposed solution for authorisation
+
+This will be added later.
