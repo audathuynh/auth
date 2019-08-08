@@ -51,7 +51,7 @@ Is the ticket for me only? Can other people steal and use it? Can someone just u
 
 ### Problem 3
 
-I have loggoned on different browsers, can each ticket unique for each session on each browser?
+I have loggoned on different browsers, can each ticket be used only in each session on each browser?
 
 ### Problem 4
 
