@@ -1,7 +1,7 @@
 # auth
 Authentication and Authorisation for micro-services
 
-## Authentication
+## Interaction model with JSON Web Tokens (JWT)
 
 This is the procedure of authentication for micro-services that is often used in practice.
 
@@ -21,11 +21,11 @@ Client will use the ticket T<sub>CS</sub> in the next requests to access resourc
 
 When [JSON Web Tokens - JWT](https://jwt.io) is used to implement the ticket T<sub>CS</sub>, the ticket T<sub>CS</sub> is formulated as a triple of `header`, `payload`, and {header, payload}<sub>K</sub>, where {header, payload}<sub>K</sub> denotes that the information of `header` and `payload` is encrypted by a key `K`.
 {header, payload}<sub>K</sub> can be seen as a signature signed by the authentication server `A`.
-When we design T<sub>CS</sub>, the key `K` can be a secret key in symmetric encryption or a public key in asymmetric encryption.
+The key `K` will be a secret key if the symmetric encryption is used or it will be a public key if the asymmetric encryption is used.
 
 ### Step 3: C &rarr; S: request, T<sub>CS</sub>
 
-In the step 3, the client sends requests to the server `S`. The ticket T<sub>CS</sub> is attached in each request to the server `S`. The server `S` can be a resource server or it can be a gateway server for several resource servers in the architecture of micro-services.
+In the step 3, the client sends requests to the server `S`. The ticket T<sub>CS</sub> is attached in each request to the server `S`. The server `S` can be a resource service or it can be a gateway server for accessing several resource services in the architecture of micro-services.
 The server `S` needs to verify T<sub>CS</sub> to make sure that the request is authenticated before the server `S` performs the request from the client `C`.
 In the process, the server `S` may need to ask the authentication server `A` to verify the ticket or it may verify the ticket itself, before the server `S` performs the request from `C`.
 
@@ -35,7 +35,7 @@ When [JSON Web Tokens - JWT](https://jwt.io) is used, T<sub>CS</sub> can be veri
 
 In the step 4, the server `S` returns the result to the client `C`.
 
-## The problems of the authentication process when JWT is used
+## Problems with authentication
 
 When JWT is used, the ticket is designed so that the server can verify it. There are problems with the solution.
 
@@ -57,16 +57,18 @@ Can each ticket be used only in each session on each app?
 ### Problem 4
 
 I have just received a result from you, the server `S`. 
-How do I verify that the result is really from `S`, not from someone else for my request data?
+How do I verify that the result is for the request data I have sent to `S` and it is not from someone else?
 
-## A proposed solution for authentication
+## Problems with authorisation
 
-This will be added later.
+As mentioned above, `S` in the interaction model is a resource server or can be a gateway to access several resource services.
+The ticket T<sub>CS</sub> is used to access any resource server or resources services in the system.
+There is no design in the interaction model to say if the client can access a particular resource server or a resource service or not.
 
-## Authorisation
+In practice, we may have several resource servers/services. 
+Each resource server/service manages several resource inside.
+Therefore, a verfication is necessary to check whether the client can access a particular resource service, before we conduct another check to see if the client can access a particular resource in the resource service or not.
 
-This will be added later.
-
-## A proposed solution for authorisation
+## A proposed solution
 
 This will be added later.
