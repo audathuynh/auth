@@ -39,10 +39,16 @@ In the step 4, the server `S` returns the result to the client `C`.
 
 When JWT is used, the ticket is designed so that the server can verify it. There are problems with the solution.
 
-Problem 1: I am the client, I have just sent you (the server) my username and password and I have received a JWT ticket. 
+### Problem 1
+
+I am the client, I have just sent you (the server) my username and password and I have received a JWT ticket. 
 How do I verify that the JWT ticket I have obtained is really from you?
 
-Problem 2: I assume that the ticket can be verified that it is from you. 
+### Problem 2
+
+I assume that the ticket can be verified that it is from you. 
 Is the ticket for me only? Can other people steal and use it?
 
-Problem 3: I have loggoned on different browsers, can each ticket unique for each session on each browser?
+### Problem 3
+
+I have loggoned on different browsers, can each ticket unique for each session on each browser?
