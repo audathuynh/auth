@@ -51,7 +51,8 @@ Is the ticket for me only? Can other people steal and use it? Can someone just u
 
 ### Problem 3
 
-I have loggoned on different browsers, can each ticket be used only in each session on each browser?
+I have used my username and password to log-on on different apps. 
+Can each ticket be used only in each session on each app?
 
 ### Problem 4
 
