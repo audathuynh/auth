@@ -65,9 +65,9 @@ As mentioned above, `S` in the interaction model is a resource server or can be 
 The ticket T<sub>CS</sub> is used to access any resource server or resources services in the system.
 There is no design in the interaction model to say if the client can access a particular resource server or a resource service or not.
 
-In practice, we may have several resource servers/services. 
-Each resource server/service manages several resource inside.
-Therefore, a verfication is necessary to check whether the client can access a particular resource service, before we conduct another check to see if the client can access a particular resource in the resource service or not.
+In practice, we may have several resource servers/services in the system. 
+Each resource server/service manages several resources inside.
+Therefore, a verfication is necessary to check whether the client can access a resource service, before we conduct another check to see if the client can access a particular resource in the resource service or not.
 
 ## A proposed solution
 
