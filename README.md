@@ -25,7 +25,7 @@ The key `K` will be a secret key if the symmetric encryption is used or it will 
 
 ### Step 3: C &rarr; S: request, T<sub>CS</sub>
 
-In the step 3, the client sends requests to the server `S`. The ticket T<sub>CS</sub> is attached in each request to the server `S`. The server `S` can be a resource service or it can be a gateway server for accessing several resource services in the architecture of micro-services.
+In the step 3, the client `C` sends requests to the server `S`. The ticket T<sub>CS</sub> is attached in each request to the server `S`. The server `S` can be a resource service or it can be a gateway server for accessing several resource services in the architecture of micro-services.
 The server `S` needs to verify T<sub>CS</sub> to make sure that the request is authenticated before the server `S` performs the request from the client `C`.
 In the process, the server `S` may need to ask the authentication server `A` to verify the ticket or it may verify the ticket itself, before the server `S` performs the request from `C`.
 
