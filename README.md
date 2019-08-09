@@ -15,9 +15,9 @@ K<sub>c</sub> can be the password that the user inputted.
 
 ### Step 2: A &rarr; C: T<sub>CS</sub>
 
-In the step 2, the authentication server `A` verifies the information of the user id C<sub>id</sub> and the key K<sub>c</sub> in the system. If the information is correct, a ticket T<sub>CS</sub> will be returned to the client.
+In the step 2, the authentication server `A` verifies the information of the user id C<sub>id</sub> and the key K<sub>c</sub> in the system. If the information is correct, a ticket T<sub>CS</sub> will be returned to the client `C`.
 
-Client will use the ticket T<sub>CS</sub> in the next requests to access resources on the server `S` in the next step.
+The client `C` will use the ticket T<sub>CS</sub> in the requests to access resources on the server `S` in the next step.
 
 When [JSON Web Tokens - JWT](https://jwt.io) is used to implement the ticket T<sub>CS</sub>, the ticket T<sub>CS</sub> is formulated as a triple of `header`, `payload`, and {header, payload}<sub>K</sub>, where {header, payload}<sub>K</sub> denotes that the information of `header` and `payload` is encrypted by a key `K`.
 {header, payload}<sub>K</sub> can be seen as a signature signed by the authentication server `A`.
