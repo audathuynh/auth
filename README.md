@@ -47,7 +47,7 @@ How do I verify that the JWT ticket I have obtained is really from you?
 ### Problem 2
 
 I assume that the ticket can be verified that it is from you. 
-Is the ticket for me only? Can other people steal and use it? Can someone just use a ticket which they know it can be verified and send it to me so that I would use the ticket to send my important data in my requests.
+Is the ticket for me only? Can other people steal and use it? Can someone just use a ticket which they know it can be verified and send it to me so that I would use the ticket to send my important data in my requests?
 
 ### Problem 3
 
