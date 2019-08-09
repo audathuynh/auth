@@ -41,7 +41,7 @@ When JWT is used, the ticket is designed so that the server can verify it. There
 
 ### Problem 1
 
-I am the client, I have just sent you (the server) my username and password and I have received a JWT ticket. 
+I am the client, I have just sent you (the authentication server `A`) my username and password, and I have received a JWT ticket. 
 How do I verify that the JWT ticket I have obtained is really from you?
 
 ### Problem 2
