@@ -56,7 +56,7 @@ Can each ticket be used only in each session on each app?
 
 ### Problem 4
 
-I have just received a result from you, the server `S`. 
+I have just sent you, the server `S`, a request with a ticket from you, and I have received a result. 
 How do I verify that the result is for the request data I have sent to `S` and it is not from someone else?
 
 ## Problems with authorisation
