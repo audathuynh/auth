@@ -19,9 +19,8 @@ In the step 2, the authentication server `A` verifies the information of the use
 
 The client `C` will use the ticket T<sub>CS</sub> in the requests to access resources on the server `S` in the next step.
 
-When [JSON Web Tokens - JWT](https://jwt.io) is used to implement the ticket T<sub>CS</sub>, the ticket T<sub>CS</sub> is formulated as a triple of `header`, `payload`, and {header, payload}<sub>K</sub>, where {header, payload}<sub>K</sub> denotes that the information of `header` and `payload` is encrypted by a key `K`.
+When [JSON Web Tokens - JWT](https://jwt.io) is used to implement the ticket T<sub>CS</sub>, the ticket T<sub>CS</sub> is formulated as a triple of `header`, `payload`, and {header, payload}<sub>K</sub>, where {header, payload}<sub>K</sub> denotes that the information of `header` and `payload` is encrypted by a secret key `K`.
 {header, payload}<sub>K</sub> can be seen as a signature signed by the authentication server `A`.
-The key `K` will be a secret key if the symmetric encryption is used or it will be a public key known by `A` but unknown by `C` if the asymmetric encryption is used.
 
 ### Step 3: C &rarr; S: request, T<sub>CS</sub>
 
@@ -29,7 +28,7 @@ In the step 3, the client `C` sends requests to the server `S`. The ticket T<sub
 The server `S` needs to verify T<sub>CS</sub> to make sure that the request is authenticated before the server `S` performs the request from the client `C`.
 In the process, the server `S` may need to ask the authentication server `A` to verify the ticket or it may verify the ticket itself, before the server `S` performs the request from `C`.
 
-When [JSON Web Tokens - JWT](https://jwt.io) is used, T<sub>CS</sub> can be verified by using the knowledge of the key `K` if symmetric encryption is used, or by using the knowedge of the private key for the public key `K` if asymmetric encryption is used.
+When [JSON Web Tokens - JWT](https://jwt.io) is used, the ticket T<sub>CS</sub> can be verified by using the knowledge of the secrte key `K` and the algorithm that we used to obtain {header, payload}<sub>K</sub>.
 
 ### Step 4: S &rarr; C: result
 
