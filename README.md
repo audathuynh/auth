@@ -28,7 +28,7 @@ In the step 3, the client `C` sends requests to the server `S`. The ticket T<sub
 The server `S` needs to verify T<sub>CS</sub> to make sure that the request is authenticated before the server `S` performs the request from the client `C`.
 In the process, the server `S` may need to ask the authentication server `A` to verify the ticket or it may verify the ticket itself, before the server `S` performs the request from `C`.
 
-When [JSON Web Tokens - JWT](https://jwt.io) is used, the ticket T<sub>CS</sub> can be verified by using the knowledge of the secrte key `K` and the algorithm that we used to obtain {header, payload}<sub>K</sub>.
+When [JSON Web Tokens - JWT](https://jwt.io) is used, the ticket T<sub>CS</sub> can be verified by using the knowledge of the secrete key `K` and the algorithm that we used to obtain {header, payload}<sub>K</sub>.
 
 ### Step 4: S &rarr; C: result
 
