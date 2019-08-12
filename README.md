@@ -21,7 +21,7 @@ The client `C` will use the ticket T<sub>CS</sub> in the requests to access reso
 
 When [JSON Web Tokens - JWT](https://jwt.io) is used to implement the ticket T<sub>CS</sub>, the ticket T<sub>CS</sub> is formulated as a triple of `header`, `payload`, and {header, payload}<sub>K</sub>, where {header, payload}<sub>K</sub> denotes that the information of `header` and `payload` is encrypted by a key `K`.
 {header, payload}<sub>K</sub> can be seen as a signature signed by the authentication server `A`.
-The key `K` will be a secret key if the symmetric encryption is used or it will be a public key if the asymmetric encryption is used.
+The key `K` will be a secret key if the symmetric encryption is used or it will be a public key known by `A` but unknown by `C` if the asymmetric encryption is used.
 
 ### Step 3: C &rarr; S: request, T<sub>CS</sub>
 
