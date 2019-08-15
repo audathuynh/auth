@@ -34,7 +34,7 @@ When [JSON Web Tokens - JWT](https://jwt.io) is used, the ticket T<sub>CS</sub> 
 
 In the step 4, the server `S` returns the result to the client `C`.
 
-## Problems with authentication
+## Problems with the authentication in the model
 
 When JWT is used, the ticket is designed so that the server can verify it. There are problems with the solution.
 
@@ -58,7 +58,7 @@ Can each ticket be used only in each session on each app?
 I have just sent you, the server `S`, a request with a ticket from you, and I have received a result. 
 How do I verify that the result is for the request data I have sent to `S` and it is not from someone else?
 
-## Problems with authorisation
+## Problems with the authorisation in the model
 
 As mentioned above, `S` in the interaction model is a resource server or can be a gateway to access several resource services.
 The ticket T<sub>CS</sub> is used to access any resource server or resource services in the system.
