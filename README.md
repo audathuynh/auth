@@ -68,7 +68,7 @@ In practice, we may have several resource servers/services in the system.
 Each resource server/service manages several resources inside.
 Therefore, a verfication is necessary to check whether the client can access a resource service, before we conduct another check to see if the client can access a particular resource in the resource service.
 
-## A proposed solution
+## A proposed solution for authentication only
 
 In this proposal, I will present an interaction model to deal with the problems that I have mentioned above.
 I have not resolved the issues of authorisation in this proposal yet. 
@@ -109,3 +109,6 @@ The result can be encrypted by the key K<sub>CS</sub> if neccessary.
 The server `S` uses the key K<sub>CS</sub> to encrypt the nounce n<sub>2</sub> to return to the client in the result.
 The client `C` can verify the result from the server `S` by using the key K<sub>CS</sub> to get the nounce n<sub>2</sub> and compare it with the nounce that the client `C` generated and sent in the step 3.
 
+## A proposed solutions for authentication and authorisation
+
+Will be added later.
