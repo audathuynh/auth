@@ -74,8 +74,10 @@ In this proposal, I will present an interaction model to deal with the problems 
 I have not resolved the issues of authorisation in this proposal yet. 
 The problem of authorisation in the model can be resolved easily and will be presented later.
 
-### Step 1: C &rarr; A: C<sub>id</sub>, K<sub>c</sub>, n
+### Step 1: C &rarr; A: C<sub>id</sub>, K<sub>c</sub>, n<sub>1</sub>
 
-### Step 2: A &rarr; C: {K<sub>CS</sub>, n}<sub>K<sub>C</sub></sub>, T<sub>CS</sub>={C<sub>id</sub>, t1, t2, K<sub>CS</sub>}<sub>K<sub>S</sub></sub>
+### Step 2: A &rarr; C: {K<sub>CS</sub>, n<sub>1</sub>}<sub>K<sub>C</sub></sub>, T<sub>CS</sub>={C<sub>id</sub>, t<sub>1</sub>, t<sub>2</sub>, K<sub>CS</sub>}<sub>K<sub>S</sub></sub>
 
-### Step 3: C &rarr; S: 
+### Step 3: C &rarr; S: {C<sub>id</sub>, n<sub>2</sub>}<sub>K<sub>CS</sub></sub>, T<sub>CS</sub>, request
+
+### Step 4: S &rarr; C: {n<sub>2</sub>}<sub>K<sub>CS</sub>, result
