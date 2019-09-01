@@ -70,4 +70,12 @@ Therefore, a verfication is necessary to check whether the client can access a r
 
 ## A proposed solution
 
-This will be added later.
+In this proposal, I will present an interaction model to deal with the problems that I have mentioned above.
+I have not resolved the issues of authorisation in this proposal yet. 
+The problem of authorisation in the model can be resolved easily and will be presented later.
+
+### Step 1: C &rarr; A: C<sub>id</sub>, K<sub>c</sub>, n
+
+### Step 2: A &rarr; C: {K<sub>CS</sub>, n}<sub>K<sub>C</sub></sub>, T<sub>CS</sub>={C<sub>id</sub>, t1, t2, K<sub>CS</sub>}<sub>K<sub>S</sub></sub>
+
+### Step 3: C &rarr; S: 
