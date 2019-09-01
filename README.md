@@ -80,4 +80,4 @@ The problem of authorisation in the model can be resolved easily and will be pre
 
 ### Step 3: C &rarr; S: {C<sub>id</sub>, n<sub>2</sub>}<sub>K<sub>CS</sub></sub>, T<sub>CS</sub>, request
 
-### Step 4: S &rarr; C: {n<sub>2</sub>}<sub>K<sub>CS</sub>, result
+### Step 4: S &rarr; C: {n<sub>2</sub>}<sub>K<sub>CS</sub></sub>, result
