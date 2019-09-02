@@ -115,6 +115,6 @@ The client `C` can verify the result from the server `S` by using the key K<sub>
 
 The interaction model proposed in the previous section has not resolved the issue of authorisation yet.
 In practice, the server `S` can be a resource service or can be a gateway to several resource services in the architecture of micro-services.
-We may need to have a step in the interaction model to verify if the client `C` has rights to access a resource service before the client `C` can send requests to perform operations on a resource service in the step 3.
+We need to verify if the client `C` has rights to access a resource service before the client `C` can send requests to perform operations on a resource service in the step 3.
 
 More details will be added later.
