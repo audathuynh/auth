@@ -110,4 +110,4 @@ The client `C` can verify the result from the server `S` by using the key K<sub>
 
 ## A proposed solution for authentication and authorisation
 
-Will be added later.
+More details will be added later.
